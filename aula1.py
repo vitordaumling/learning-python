@@ -8,6 +8,7 @@ documentação - pode ser usado como comentário maior
 # Primeiras linhas em python
 print('Hello, World!')
 print('Outra Coisa!')
+print('Outra Coisa2!')
 
 ## Aula 2
 # \r\n -> CRLF
