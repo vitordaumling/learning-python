@@ -18,5 +18,5 @@ print(2, "Luiz 'Otávio'") ## um numero, string
 # Escape
 print("Luiz \"Otávio\"")
 
-# r
+# r (mostra os caracteres de escape)
 print(r"Luiz \"Otávio\"")
