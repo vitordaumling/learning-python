@@ -26,3 +26,11 @@ print(16 % 8 == 0)
 print(10 % 2 == 0) # é par ?
 print(15 % 2 == 0) # é par ?
 print(16 % 2 == 0) # é par ?
+
+## Precedencia de Operadores (nessa ordem)
+# 1. (n + n) 
+# 2. **
+# 3. * / // %
+# 4. + -
+conta_1 = (1 + int(0.5 + 0.5)) ** (5 + 5)
+print(conta_1)
