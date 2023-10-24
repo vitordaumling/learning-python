@@ -16,3 +16,18 @@ linha_3 = f'{imc:.2f}'
 print(linha_1)
 print(linha_2)
 print(linha_3)
+
+# Usando format
+a = 'AAAAA'
+b = 'BBBBB'
+c = 1.1
+
+string = 'a={0} b={1} c={2:.2f}'.format(a, b, c)
+# usando string.format
+formato = string.format(a,b,c)
+# parametro nomeado
+formato = string.format(
+    nome1=a, nome2=b, nome3=c
+)
+
+print(formato)
