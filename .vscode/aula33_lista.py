@@ -16,8 +16,8 @@ lista = [10, 20, 30, 40]
 # print(lista)
 # print(lista[2])
 lista.append(50)
-lista.pop()
+lista.pop() # pop ultimo item
 lista.append(60)
 lista.append(70)
-ultimo_valor = lista.pop(3)
+ultimo_valor = lista.pop(3) # pop com indice - remove o indice 3
 print(lista, 'Removido,', ultimo_valor)
