@@ -34,3 +34,17 @@ lista_c = lista_a + lista_b
 ## Concatenando a lista A com a lista B
 lista_a.extend(lista_b)
 print(lista_a)
+
+
+## Método copy para copiar uma lista para outra
+"""
+Cuidados com dados mutáveis
+= - copiado o valor (imutáveis)
+= - aponta para o mesmo valor na memória (mutável)
+"""
+lista_a = ['Luiz', 'Maria', 1, True, 1.2]
+lista_b = lista_a.copy()
+
+lista_a[0] = 'Qualquer coisa'
+print(lista_a)
+print(lista_b)
