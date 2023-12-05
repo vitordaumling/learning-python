@@ -23,7 +23,29 @@ contrário disso:
 
 O primeiro dígito do CPF é 7
 """
-cpf_enviado_usuario = '74682489070'
+import re
+import sys
+
+# # Retirando a mask em cascata com '\
+# cpf_enviado_usuario = '746.824.890-70'\
+#     .replace('.','') \
+#     .replace(' ', '') \
+#     .replace('-', '')
+# mesma operação usando a lib 're'
+entrada = input('Digite um CPF [746.824.898-78]: ')
+cpf_enviado_usuario = re.sub(
+    r'[^0-9]',
+    '', 
+    entrada
+)
+
+# Caracteres repetidos
+entrada_e_sequencial = entrada == entrada[0] * len(entrada)
+if entrada_e_sequencial:
+    print("Voce digitou uma sequencia! Isso não é valido!")
+    sys.exit()
+
+     
 # Calculo do 1o digito
 nove_digitos = cpf_enviado_usuario[:9]
 contador_regressivo_1 = 10
@@ -57,4 +79,5 @@ else:
     print(f'{cpf_enviado_usuario}" é invalido!')
 
 print(cpf_gerado_calculo)
+sys.exit()
 
