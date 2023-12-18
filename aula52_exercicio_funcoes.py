@@ -35,3 +35,4 @@ triplicar = criar_multiplicador(3)
 quadruplicar = criar_multiplicador(4)
 
 print(duplicar(2), triplicar(2), quadruplicar(2))
+print(duplicar(20), triplicar(30), quadruplicar(40))
